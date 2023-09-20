@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ssfa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0058-tenant/ci10t-776-0058-app/devfile-sample-ssfa@sha256:026df7682b6d4e9d899595f136f0bc200203d63fe7322c2f035379f044aac287
+        name: my-nodejs
+        resources: {}
+status: {}
